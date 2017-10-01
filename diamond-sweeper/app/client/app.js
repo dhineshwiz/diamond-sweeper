@@ -10,6 +10,12 @@ global.startApp = function(container) {
     $(document).ready(function() {
         randomGenerators(diamond_count);
         initializeBoard(board_row, board_col);
+        
+        $("#start-new-game").on("click", function() {
+            randomGenerators(diamond_count);
+            winCount = 0;
+            $('td').css('transform', 'none').removeClass('arrow diamond disabled').addClass('unknown');
+        });
     });
 }
 
