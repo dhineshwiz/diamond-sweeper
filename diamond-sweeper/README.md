@@ -1,5 +1,12 @@
 # Diamond Sweeper
 
+To start the Application:
+
+* Install the dependencies : `npm install`
+* Compile Assets: `npm run compile`
+* Start the webserver: `npm start`
+* Visit `http://localhost:3000` to see the application
+
 Algorithm for diamond Sweeper:
 
 Render a 8X8 table with unique Ids from 0 to 63.
